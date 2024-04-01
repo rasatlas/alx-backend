@@ -35,7 +35,7 @@ class Server:
 
         self.dataset()
         idx_range = index_range(page, page_size)
-        if idx_range[0] > len(self.__dataset):
+        if idx_range[0] > len(self.__dataset)/page_size:
             return []
         else:
             return self.__dataset[idx_range[0]: idx_range[1]]
