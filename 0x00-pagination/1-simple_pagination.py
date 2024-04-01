@@ -4,7 +4,7 @@
 
 import csv
 import math
-from typing import List
+from typing import List, Tuple
 
 
 class Server:
@@ -40,7 +40,7 @@ class Server:
             return self.__dataset[idx_range[0]: idx_range[1]]
 
 
-def index_range(page, page_size):
+def index_range(page: int, page_size: int) -> Tuple:
     """ A function that takes two integer arguments page and page_size.
     Returns a tuple of size two containing a start index and an end index
     corresponding to the range of indexes to return in a list for those
