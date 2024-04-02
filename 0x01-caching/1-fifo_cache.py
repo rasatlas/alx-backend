@@ -12,9 +12,11 @@ class FIFOCache(BaseCaching):
         """ Add an item in the cache
         """
         if key is not None and item is not None:
-            if len(self.cache_data) > BaseCaching.MAX_ITEMS:
-                my_tuple = self.cache_data.popitem()
-                print('DISCARD: {}'.format(my_tuple[0]))
+            if len(self.cache_data) >= BaseCaching.MAX_ITEMS:
+                sorted_key_list = sorted(self.cache_data.keys())
+                first_item = next(iter(sorted_key_list))
+                del self.cache_data[first_item]
+                print('DISCARD: {}'.format(first_item))
                 self.cache_data[key] = item
             else:
                 self.cache_data[key] = item
