@@ -5,6 +5,9 @@ from base_caching import BaseCaching
 
 class BasicCache(BaseCaching):
     """Class implementing basic caching using dictionary. """
+    def __init__(self):
+        super().__init__()
+
     def put(self, key, item):
         """ Add an item in the cache
         """
