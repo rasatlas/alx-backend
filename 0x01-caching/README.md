@@ -146,6 +146,7 @@ Street
 guillaume@ubuntu:~/0x01$ 
 ```
 __File:__ `0-basic_cache.py`
+***
 
 ### 1. FIFO caching
 
@@ -208,6 +209,7 @@ guillaume@ubuntu:~/0x01$
 ```
 
 __File:__ `1-fifo_cache.py`
+***
 
 ### 2. LIFO Caching
 
@@ -279,6 +281,7 @@ guillaume@ubuntu:~/0x01$
 ```
 
 __File:__ `2-lifo_cache.py`
+***
 
 ### 3. LRU Caching
 
@@ -390,6 +393,7 @@ guillaume@ubuntu:~/0x01$
 ```
 
 __File:__ `3-lru_cache.py`
+***
 
 ### 4. MRU Caching
 
@@ -501,6 +505,7 @@ guillaume@ubuntu:~/0x01$
 ```
 
 __File:__ `4-mru_cache.py`
+***
 
 ### 5. LFU Caching
 
@@ -641,3 +646,4 @@ guillaume@ubuntu:~/0x01$
 ```
 
 __File:__ `100-lfu_cache.py`
+***
