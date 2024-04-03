@@ -16,9 +16,10 @@ class LRUCache(BaseCaching):
         if key is not None and item is not None:
             if len(self.cache_data) >= BaseCaching.MAX_ITEMS:
                 # delete last element from the dictionary.
-                tmp = self.cache_data.popitem(last=True)
-                print('DISCARD: {}'.format(tmp[0]))
+                lru = self.cache_data.popitem(last=True)
+                print('DISCARD: {}'.format(lru[0]))
                 self.cache_data[key] = item
+                self.cache_data.move_to_end(key, last=False)
             else:
                 self.cache_data[key] = item
 
