@@ -8,5 +8,5 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    """Route to home."""
-    return render_template("index.html")
+    """Route to root."""
+    return render_template("0-index.html")
