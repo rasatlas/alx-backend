@@ -10,3 +10,7 @@ app = Flask(__name__)
 def index() -> str:
     """Route to root."""
     return render_template("0-index.html")
+
+
+if __name__ == "__main__":
+    app.route(host="0.0.0.0", port="5000")
