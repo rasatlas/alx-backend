@@ -7,11 +7,11 @@ app = Flask(__name__)
 
 
 class Config:
-    """Config class to configure available language in our app."""
+    """App configuration"""
 
     LANGUAGES = ["en", "fr"]
-    Babel.default_locale = "en"
-    Babel.default_timezone = "UTC"
+    BABEL_DEFAULT_LOCALE = "en"
+    BABEL_DEFAULT_TIMEZONE = "UTC"
 
 
 babel = Babel(app)
