@@ -6,7 +6,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-@app.route("/")
-def index():
+@app.route("/", methods=["GET"], strict_slashes=False)
+def index() -> str:
     """Route to root."""
     return render_template("0-index.html")
