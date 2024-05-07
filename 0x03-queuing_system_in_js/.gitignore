@@ -1,0 +1,4 @@
+node_modules/*
+redis-7.0.15/*
+*.tar.gz
+.vscode
